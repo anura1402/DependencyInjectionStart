@@ -3,8 +3,6 @@ package ru.anura.dependencyinjectionstart.example2.presentation
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import ru.anura.dependencyinjectionstart.R
-import ru.anura.dependencyinjectionstart.example1.Activity
-import ru.anura.dependencyinjectionstart.example2.di.ContextModule
 import ru.anura.dependencyinjectionstart.example2.di.DaggerApplicationComponent
 import javax.inject.Inject
 
@@ -14,7 +12,8 @@ class MainActivity : AppCompatActivity() {
 
     private val component by lazy{
         DaggerApplicationComponent.builder()
-            .contextModule(ContextModule(application))
+            .context(application)
+            .time(System.currentTimeMillis())
             .build()
     }
     override fun onCreate(savedInstanceState: Bundle?) {

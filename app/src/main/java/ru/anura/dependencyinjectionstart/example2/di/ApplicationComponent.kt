@@ -4,12 +4,13 @@ import android.content.Context
 import dagger.BindsInstance
 import dagger.Component
 import ru.anura.dependencyinjectionstart.example2.presentation.MainActivity
+import ru.anura.dependencyinjectionstart.example2.presentation.MainActivity2
 import javax.inject.Singleton
 
 @ApplicationScope
-@Component(modules = [DataModule::class, DomainModule::class, ViewModelModule::class])
+@Component(modules = [DataModule::class, DomainModule::class])
 interface ApplicationComponent {
-    fun inject(activity: MainActivity)
+    fun activityComponentFactory(): ActivityComponent.Factory
 
 //    @Component.Builder
 //    interface ApplicationComponentBuilder {

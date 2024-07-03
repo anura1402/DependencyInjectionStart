@@ -14,7 +14,7 @@ class ExampleApiService @Inject constructor(
 ) {
 
     fun method() {
-        Log.d(LOG_TAG, "ExampleApiService ${context.getString(R.string.app_name)} $time $this")
+        //Log.d(LOG_TAG, "ExampleApiService ${context.getString(R.string.app_name)} $time $this")
 
     }
 

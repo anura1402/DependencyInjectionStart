@@ -2,9 +2,6 @@ package ru.anura.dependencyinjectionstart.example2.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import ru.anura.dependencyinjectionstart.example2.di.ApplicationScope
-import ru.anura.dependencyinjectionstart.example2.domain.ExampleRepository
-import ru.anura.dependencyinjectionstart.example2.domain.ExampleUseCase
 import javax.inject.Inject
 import javax.inject.Provider
 

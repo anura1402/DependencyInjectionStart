@@ -1,11 +1,10 @@
 package ru.anura.dependencyinjectionstart.example2.di
 
-import android.view.View
 import androidx.lifecycle.ViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
-import dagger.multibindings.StringKey
+import ru.anura.dependencyinjectionstart.example2.di.annotations.ViewModelKey
 import ru.anura.dependencyinjectionstart.example2.presentation.ExampleViewModel
 import ru.anura.dependencyinjectionstart.example2.presentation.ExampleViewModel2
 

@@ -3,9 +3,7 @@ package ru.anura.dependencyinjectionstart.example2.di
 import android.content.Context
 import dagger.BindsInstance
 import dagger.Component
-import ru.anura.dependencyinjectionstart.example2.presentation.MainActivity
-import ru.anura.dependencyinjectionstart.example2.presentation.MainActivity2
-import javax.inject.Singleton
+import ru.anura.dependencyinjectionstart.example2.di.annotations.ApplicationScope
 
 @ApplicationScope
 @Component(modules = [DataModule::class, DomainModule::class])

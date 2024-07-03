@@ -1,11 +1,8 @@
 package ru.anura.dependencyinjectionstart.example2.data.network
 
 import android.content.Context
-import android.util.Log
-import ru.anura.dependencyinjectionstart.R
-import ru.anura.dependencyinjectionstart.example2.di.ApplicationScope
+import ru.anura.dependencyinjectionstart.example2.di.annotations.ApplicationScope
 import javax.inject.Inject
-import javax.inject.Singleton
 
 @ApplicationScope
 class ExampleApiService @Inject constructor(

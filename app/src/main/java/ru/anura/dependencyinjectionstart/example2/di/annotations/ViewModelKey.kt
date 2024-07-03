@@ -1,4 +1,4 @@
-package ru.anura.dependencyinjectionstart.example2.di
+package ru.anura.dependencyinjectionstart.example2.di.annotations
 
 import androidx.lifecycle.ViewModel
 import dagger.MapKey

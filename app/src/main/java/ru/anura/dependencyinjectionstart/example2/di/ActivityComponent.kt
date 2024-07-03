@@ -2,9 +2,10 @@ package ru.anura.dependencyinjectionstart.example2.di
 
 import dagger.BindsInstance
 import dagger.Subcomponent
+import ru.anura.dependencyinjectionstart.example2.di.annotations.IdQualifier
+import ru.anura.dependencyinjectionstart.example2.di.annotations.NameQualifier
 import ru.anura.dependencyinjectionstart.example2.presentation.MainActivity
 import ru.anura.dependencyinjectionstart.example2.presentation.MainActivity2
-import javax.inject.Named
 
 @Subcomponent(modules = [ViewModelModule::class])
 interface ActivityComponent {

@@ -4,6 +4,7 @@ import dagger.BindsInstance
 import dagger.Subcomponent
 import ru.anura.dependencyinjectionstart.example2.presentation.MainActivity
 import ru.anura.dependencyinjectionstart.example2.presentation.MainActivity2
+import javax.inject.Named
 
 @Subcomponent(modules = [ViewModelModule::class])
 interface ActivityComponent {
@@ -13,7 +14,8 @@ interface ActivityComponent {
     @Subcomponent.Factory
     interface Factory{
         fun create(
-            @BindsInstance id: String
+            @BindsInstance @Named("id") id: String,
+            @BindsInstance @Named("name") name: String
         ): ActivityComponent
     }
 }
